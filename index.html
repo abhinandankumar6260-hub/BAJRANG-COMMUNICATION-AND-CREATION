@@ -254,6 +254,28 @@ function openQRCustomer(){const v=new URLSearchParams(location.search).get("cust
 function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 function escAttr(s){return esc(s).replace(/`/g,"&#96;")}
 window.addEventListener("load",openQRCustomer);document.addEventListener("click",e=>{const wrap=document.querySelector(".menu-wrap");if(wrap&&!wrap.contains(e.target))closeMenu()});
+</script><script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCFYB5hTGpR3uOMsb_kPh784ygi8HM-idM",
+    authDomain: "bajrang-communication.firebaseapp.com",
+    projectId: "bajrang-communication",
+    storageBucket: "bajrang-communication.firebasestorage.app",
+    messagingSenderId: "515311913351",
+    appId: "1:515311913351:web:802a1b5c986839baacab22",
+    measurementId: "G-LMDP28MWYL"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 </body>
 </html>
